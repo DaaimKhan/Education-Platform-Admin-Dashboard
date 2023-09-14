@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Section</title>
+    <!-- Add Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Custom styles */
+        .tab-content {
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar (you can customize this based on your needs) -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">User Section</a>
+    </nav>
+
+    <!-- Tabs to switch between Instructor and Student sections -->
+    <ul class="nav nav-tabs" id="myTabs">
+        <li class="nav-item">
+            <a class="nav-link active" data-toggle="tab" href="#instructor">Instructor</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#student">Student</a>
+        </li>
+    </ul>
+
+    <!-- Tab content -->
+    <div class="tab-content">
+        <!-- Instructor Section -->
+        <div class="tab-pane fade show active" id="instructor">
+            <div class="container mt-5">
+                <h1>Welcome to the Instructor Page</h1>
+                <!-- Add content specific to instructors -->
+            </div>
+        </div>
+
+        <!-- Student Section -->
+        <div class="tab-pane fade" id="student">
+            <div class="container mt-5">
+                <h1>Welcome to the Student Page</h1>
+                <!-- Add content specific to students -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Add Bootstrap JS (if needed) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

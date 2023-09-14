@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Static Navigation - SB Admin</title>
+        <link href="css/styles.css" rel="stylesheet" />
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
+            <!-- Navbar Brand-->
+            <a class="navbar-brand ps-3" href="index.html">GEEKS</a>
+            <!-- Sidebar Toggle-->
+            <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
+            <!-- Navbar Search-->
+            <form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
+                <div class="input-group">
+                    <input class="form-control" type="text" placeholder="Search for..." aria-label="Search for..." aria-describedby="btnNavbarSearch" />
+                    <button class="btn btn-primary" id="btnNavbarSearch" type="button"><i class="fas fa-search"></i></button>
+                </div>
+            </form>
+            <!-- Navbar-->
+            <ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#!">Settings</a></li>
+                        <li><a class="dropdown-item" href="#!">Activity Log</a></li>
+                        <li><hr class="dropdown-divider" /></li>
+                        <li><a class="dropdown-item" href="#!">Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div id="layoutSidenav">
+            <div id="layoutSidenav_nav">
+                <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+                    <div class="sb-sidenav-menu">
+                        <div class="nav">
+                            <a class="nav-link collapsed" href="index.html" data-bs-toggle="collapse" data-bs-target="#collapseDashboard" aria-expanded="false" aria-controls="collapseDashboard">
+                                <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                                Dashboard
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+
+                            <div class="collapse" id="collapseDashboard" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav">
+                                    <a class="nav-link" href="layout-static.html">Overview</a>
+                                    <a class="nav-link" href="analytics.html">Analytics</a>
+                                </nav>
+                            </div>
+
+                            <a class="nav-link collapsed" href="index.html" data-bs-toggle="collapse" data-bs-target="#collapseCourses" aria-expanded="false" aria-controls="collapseCourses">
+                                <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                                Courses
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+                            <div class="collapse" id="collapseCourses" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav">
+                                    <a class="nav-link" href="all-courses.html">All Courses</a>
+                                    <a class="nav-link" href="certificate-courses.html">Courses</a>
+                                    <a class="nav-link" href="job-garanteed-courses.html">Job Guaranteed Courses</a>
+                                </nav>
+                            </div>
+
+                            <a class="nav-link collapsed" href="index.html" data-bs-toggle="collapse" data-bs-target="#collapseUser" aria-expanded="false" aria-controls="collapseUser">
+                                <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                                User
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+                            <div class="collapse" id="collapseUser" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav">
+                                    <a class="nav-link" href="user.html">Instructor</a>
+                                    <a class="nav-link" href="user.html">Students</a>
+                                </nav>
+                            </div>
+
+                            <a class="nav-link collapsed" href="index.html" data-bs-toggle="collapse" data-bs-target="#collapseCMS" aria-expanded="false" aria-controls="collapseCMS">
+                                <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                                CMS
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+                            <div class="collapse" id="collapseCMS" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav">
+                                    <a class="nav-link" href="layout-static.html">Overview</a>
+                                    <a class="nav-link" href="layout-sidenav-light.html">All Post</a>
+                                    <a class="nav-link" href="layout-sidenav-light.html">New Post</a>
+                                    <a class="nav-link" href="layout-sidenav-light.html">Category</a>
+                                </nav>
+                            </div>
+
+                            <a class="nav-link collapsed" href="index.html" data-bs-toggle="collapse" data-bs-target="#collapseProject" aria-expanded="false" aria-controls="collapseProject">
+                                <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                                Project
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+                            <div class="collapse" id="collapseProject" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav">
+                                    <a class="nav-link" href="project-grid.html">Grid</a>
+                                    <a class="nav-link" href="layout-sidenav-light.html">List</a>
+                                    <a class="nav-link collapsed" href="index.html" data-bs-toggle="collapse" data-bs-target="#collapseSingle" aria-expanded="false" aria-controls="collapseSingle">
+                                    Single
+                                    <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                                    </a>
+                                    <div class="collapse" id="collapseSingle" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                                        <nav class="sb-sidenav-menu-nested nav">
+                                            <a class="nav-link" href="layout-static.html">Overview</a>
+                                            <a class="nav-link" href="layout-sidenav-light.html">Task</a>
+                                            <a class="nav-link" href="layout-sidenav-light.html">Budget</a>
+                                            <a class="nav-link" href="layout-sidenav-light.html">Team</a>
+                                            <a class="nav-link" href="layout-sidenav-light.html">Files</a>
+                                            <a class="nav-link" href="layout-sidenav-light.html">Summary</a>
+                                            <a class="nav-link" href="layout-sidenav-light.html">Create Project</a>
+                                        </nav>
+                                    </div>
+                                    <a class="nav-link" href="layout-sidenav-light.html">Create Project</a>
+                                </nav>
+                            </div>
+
+                            <a class="nav-link collapsed" href="index.html" data-bs-toggle="collapse" data-bs-target="#collapseAuthentication" aria-expanded="false" aria-controls="collapseAuthentication">
+                                <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                                Authentication
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+                            <div class="collapse" id="collapseAuthentication" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav">
+                                    <a class="nav-link" href="login.html">Sign In</a>
+                                    <a class="nav-link" href="register.html">Sign Up</a>
+                                    <a class="nav-link" href="login.html">Forget Password</a>
+                                    <a class="nav-link" href="#">Notifications</a>
+                                    <a class="nav-link" href="#">404 Error</a>
+                                </nav>
+                            </div>
+
+                            <a class="nav-link collapsed" href="index.html" data-bs-toggle="collapse" data-bs-target="#collapseEcommerce" aria-expanded="false" aria-controls="collapseEcommerce">
+                                <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                                Ecommerce
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+                            <div class="collapse" id="collapseEcommerce" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav">
+                                    <a class="nav-link collapsed" href="index.html" data-bs-toggle="collapse" data-bs-target="#collapseProduct" aria-expanded="false" aria-controls="collapseProduct">
+                                        Product
+                                        <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                                        </a>
+                                        <div class="collapse" id="collapseProduct" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                                            <nav class="sb-sidenav-menu-nested nav">
+                                                <a class="nav-link" href="layout-static.html">Grid</a>
+                                                <a class="nav-link" href="layout-sidenav-light.html">Grid Sidebar</a>
+                                                <a class="nav-link" href="layout-sidenav-light.html">Products</a>
+                                                <a class="nav-link" href="layout-sidenav-light.html">Product Single</a>
+                                                <a class="nav-link" href="layout-sidenav-light.html">Product Single v2</a>
+                                                <a class="nav-link" href="layout-sidenav-light.html">Add Product</a>
+                                                <a class="nav-link" href="layout-sidenav-light.html">Create Project</a>
+                                            </nav>
+                                        </div>
+                                    <a class="nav-link" href="shoppingcart.html">Shopping Cart</a>
+                                    <a class="nav-link" href="#">Checkout</a>
+                                    <a class="nav-link" href="order.html">Order</a>
+                                    <a class="nav-link" href="#">Order Single</a>
+                                    <a class="nav-link" href="#">Order History</a>
+                                    <a class="nav-link" href="#">Order Summary</a>
+                                    <a class="nav-link" href="#">Customers</a>
+                                    <a class="nav-link" href="#">Customer Single</a>
+                                    <a class="nav-link" href="#">Add Customer</a>
+                                </nav>
+                            </div>
+
+                            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
+                                <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                                Layouts
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+                            <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav">
+                                    <a class="nav-link" href="layout-static.html">Top</a>
+                                    <a class="nav-link" href="layout-sidenav-light.html">Compact</a>
+                                    <a class="nav-link" href="layout-sidenav-light.html">Vertical</a>
+                                </nav>
+                            </div>
+
+                            <div class="sb-sidenav-menu-heading">APPS</div>
+
+                            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseChat" aria-expanded="false" aria-controls="collapseChat">
+                                <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                                Chat
+                                <div class="sb-sidenav-collapse-arrow"></div>
+                            </a>
+
+                            <a class="nav-link" href="charts.html">
+                                <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
+                                Task
+                            </a>
+                            <a class="nav-link" href="tables.html">
+                                <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
+                                Mail
+                            </a>
+
+                            <a class="nav-link" href="tables.html">
+                                <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
+                                Calender
+                            </a>
+
+                            <div class="sb-sidenav-menu-heading">COMPONENTS</div>
+
+                            <a class="nav-link collapsed" href="index.html" data-bs-toggle="collapse" data-bs-target="#collapseTables" aria-expanded="false" aria-controls="collapseTables">
+                                <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                                Tables
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+                            <div class="collapse" id="collapseTables" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav">
+                                    <a class="nav-link" href="layout-static.html">Basic</a>
+                                    <a class="nav-link" href="layout-sidenav-light.html">Data Tables</a>
+                                </nav>
+                            </div>
+
+                            <a class="nav-link" href="tables.html">
+                                <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
+                                Help Center
+                            </a>
+
+
+                            <a class="nav-link collapsed" href="index.html" data-bs-toggle="collapse" data-bs-target="#collapseSiteSetting" aria-expanded="false" aria-controls="collapseSiteSetting">
+                                <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                                Site Setting
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+                            <div class="collapse" id="collapseSiteSetting" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav">
+                                    <a class="nav-link" href="layout-static.html">General</a>
+                                    <a class="nav-link" href="layout-sidenav-light.html">Google</a>
+                                    <a class="nav-link" href="layout-sidenav-light.html">Social</a>
+                                    <a class="nav-link" href="layout-sidenav-light.html">Social Login</a>
+                                    <a class="nav-link" href="layout-sidenav-light.html">Payment</a>
+                                    <a class="nav-link" href="layout-sidenav-light.html">SMPT</a>
+                                </nav>
+                            </div>
+
+                            <a class="nav-link collapsed" href="index.html" data-bs-toggle="collapse" data-bs-target="#collapseMenuLevel" aria-expanded="false" aria-controls="collapseMenuLevel">
+                                <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                                Menu Level
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+                            <div class="collapse" id="collapseMenuLevel" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav">
+                                    <a class="nav-link collapsed" href="index.html" data-bs-toggle="collapse" data-bs-target="#collapseTwoLevel" aria-expanded="false" aria-controls="collapseTwoLevel">
+                                        <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                                        Two Level
+                                        <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                                    </a>
+                                    <div class="collapse" id="collapseTwoLevel" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                                        <nav class="sb-sidenav-menu-nested nav">
+                                            <a class="nav-link" href="layout-static.html">Navitem 1</a>
+                                            <a class="nav-link" href="layout-sidenav-light.html">Navitem 2</a>
+                                        </nav>
+                                    </div>
+                                    <a class="nav-link collapsed" href="index.html" data-bs-toggle="collapse" data-bs-target="#collapseThreeLevel" aria-expanded="false" aria-controls="collapseThreeLevel">
+                                        <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                                        Three Level
+                                        <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                                    </a>
+                                    <div class="collapse" id="collapseThreeLevel" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                                        <nav class="sb-sidenav-menu-nested nav">
+                                            <a class="nav-link collapsed" href="index.html" data-bs-toggle="collapse" data-bs-target="#collapseNavitem1" aria-expanded="false" aria-controls="collapseNavitem1">
+                                                <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                                                Navitem 1
+                                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                                            </a>
+                                            <div class="collapse" id="collapseNavitem1" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                                                <nav class="sb-sidenav-menu-nested nav">
+                                                    <a class="nav-link" href="layout-static.html">NavChild Item 1</a>
+                                                    <a class="nav-link" href="layout-sidenav-light.html">Navitem 2</a>
+
+                                                </nav>
+                                            </div>
+                                            
+                                        </nav>
+                                    </div>
+                                </nav>
+                            </div>
+
+                            <div class="sb-sidenav-menu-heading">DOCUMENTATION</div>
+                            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseChat" aria-expanded="false" aria-controls="collapseChat">
+                                <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                                Documentation
+                                <div class="sb-sidenav-collapse-arrow"></div>
+                            </a>
+
+                            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseChat" aria-expanded="false" aria-controls="collapseChat">
+                                <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                                Changelog v3.1.0
+                                <div class="sb-sidenav-collapse-arrow"></div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="sb-sidenav-footer">
+                        <div class="small">Logged in as:</div>
+                        Start Bootstrap
+                    </div>
+                </nav>
+            </div>
+
+<!-- --------------------------------------------------Nav bar end here-------------------------------------------- -->
+
+            <div id="layoutSidenav_content" style="background-color: rgb(241, 241, 248)">
+                <main>
+                    <div class="container-fluid px-4">
+                        <div class="row p-3">
+                            <div class="col-lg-12 col-md-12 col-12">
+                                <div class="border-bottom pb-3 mb-3 d-lg-flex justify-content-between align-items-center">
+                                    <div class="mb-3 mb-lg-0">
+                                        <h1 class="mb-0 h2 fw-bold">Certificate Courses</h1>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4 mb-4">
+                                    <div class="card">
+                                        <img src="courses3.jpg" class="card-img-top" alt="Course Image">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Python Programming</h5>
+                                            <p class="card-text">Learn the Python Programming from the Scratch</p>
+                                            <a href="#" class="btn btn-primary">Enroll</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 mb-4">
+                                    <div class="card">
+                                        <img src="courses7.jpg" class="card-img-top" alt="Course Image">
+                                        <div class="card-body">
+                                            <h5 class="card-title">HTML CSS JS</h5>
+                                            <p class="card-text">Learn to create your own site.</p>
+                                            <a href="#" class="btn btn-primary">Enroll</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                
+                                <div class="col-md-4 mb-4">
+                                    <div class="card">
+                                        <img src="#" class="card-img-top" alt="Course Image">
+                                        <div class="card-body">
+                                            <h5 class="card-title">DevOps Principles</h5>
+                                            <p class="card-text"></p>
+                                            <a href="#" class="btn btn-primary">Enroll</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 mb-4">
+                                    <div class="card">
+                                        <img src="#" class="card-img-top" alt="Course Image">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Git and GitHub/GitLab/Bitbucket</h5>
+                                            <p class="card-text"></p>
+                                            <a href="#" class="btn btn-primary">Enroll</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 mb-4">
+                                    <div class="card">
+                                        <img src="#" class="card-img-top" alt="Course Image">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Software Testing Fundamentals</h5>
+                                            <p class="card-text"></p>
+                                            <a href="#" class="btn btn-primary">Enroll</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 mb-4">
+                                    <div class="card">
+                                        <img src="#" class="card-img-top" alt="Course Image">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Test Automation</h5>
+                                            <p class="card-text">(e.g., Selenium, Appium)</p>
+                                            <a href="#" class="btn btn-primary">Enroll</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 mb-4">
+                                    <div class="card">
+                                        <img src="#" class="card-img-top" alt="Course Image">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Operating Systems Concepts</h5>
+                                            <p class="card-text"></p>
+                                            <a href="#" class="btn btn-primary">Enroll</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 mb-4">
+                                    <div class="card">
+                                        <img src="#" class="card-img-top" alt="Course Image">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Linux/Unix Administration</h5>
+                                            <p class="card-text"></p>
+                                            <a href="#" class="btn btn-primary">Enroll</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 mb-4">
+                                    <div class="card">
+                                        <img src="#" class="card-img-top" alt="Course Image">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Computer Networking Basics
+                                            </h5>
+                                            <p class="card-text"></p>
+                                            <a href="#" class="btn btn-primary">Enroll</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                
+                                <div class="col-md-4 mb-4">
+                                    <div class="card">
+                                        <img src="#" class="card-img-top" alt="Course Image">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Cloud Computing</h5>
+                                            <p class="card-text">(e.g., AWS, Azure, Google Cloud)</p>
+                                            <a href="#" class="btn btn-primary">Enroll</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                               
+
+                                <div class="col-md-4 mb-4">
+                                    <div class="card">
+                                        <img src="#" class="card-img-top" alt="Course Image">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Cybersecurity Fundamentals</h5>
+                                            <p class="card-text"></p>
+                                            <a href="#" class="btn btn-primary">Enroll</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 mb-4">
+                                    <div class="card">
+                                        <img src="#" class="card-img-top" alt="Course Image">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Secure Coding Practices</h5>
+                                            <p class="card-text"></p>
+                                            <a href="#" class="btn btn-primary">Enroll</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 mb-4">
+                                    <div class="card">
+                                        <img src="#" class="card-img-top" alt="Course Image">
+                                        <div class="card-body">
+                                            <h5 class="card-title">iOS Development</h5>
+                                            <p class="card-text">(Swift or Objective-C)</p>
+                                            <a href="#" class="btn btn-primary">Enroll</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 mb-4">
+                                    <div class="card">
+                                        <img src="#" class="card-img-top" alt="Course Image">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Android Development</h5>
+                                            <p class="card-text">(Java or Kotlin)</p>
+                                            <a href="#" class="btn btn-primary">Enroll</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 mb-4">
+                                    <div class="card">
+                                        <img src="#" class="card-img-top" alt="Course Image">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Machine Learning Fundamentals</h5>
+                                            <p class="card-text"></p>
+                                            <a href="#" class="btn btn-primary">Enroll</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 mb-4">
+                                    <div class="card">
+                                        <img src="#" class="card-img-top" alt="Course Image">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Deep Learning with TensorFlow or PyTorch</h5>
+                                            <p class="card-text"></p>
+                                            <a href="#" class="btn btn-primary">Enroll</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 mb-4">
+                                    <div class="card">
+                                        <img src="#" class="card-img-top" alt="Course Image">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Build Tools</h5>
+                                            <p class="card-text">(e.g., Maven, Gradle)</p>
+                                            <a href="#" class="btn btn-primary">Enroll</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 mb-4">
+                                    <div class="card">
+                                        <img src="#" class="card-img-top" alt="Course Image">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Continuous Integration/Continuous Deployment </h5>
+                                            <p class="card-text">(CI/CD) Tools (e.g., Jenkins, Travis CI)
+                                            </p>
+                                            <a href="#" class="btn btn-primary">Enroll</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 mb-4">
+                                    <div class="card">
+                                        <img src="#" class="card-img-top" alt="Course Image">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Software Testing and Quality Assurance</h5>
+                                            <p class="card-text"></p>
+                                            <a href="#" class="btn btn-primary">Enroll</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 mb-4">
+                                    <div class="card">
+                                        <img src="#" class="card-img-top" alt="Course Image">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Ethics in Technology</h5>
+                                            <p class="card-text"></p>
+                                            <a href="#" class="btn btn-primary">Enroll</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 mb-4">
+                                    <div class="card">
+                                        <img src="#" class="card-img-top" alt="Course Image">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Project Management Principles</h5>
+                                            <p class="card-text"></p>
+                                            <a href="#" class="btn btn-primary">Enroll</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 mb-4">
+                                    <div class="card">
+                                        <img src="#" class="card-img-top" alt="Course Image">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Agile Project Management</h5>
+                                            <p class="card-text"></p>
+                                            <a href="#" class="btn btn-primary">Enroll</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                
+
+                                <div class="col-md-4 mb-4">
+                                    <div class="card">
+                                        <img src="#" class="card-img-top" alt="Course Image">
+                                        <div class="card-body">
+                                            <h5 class="card-title">JAVA</h5>
+                                            <p class="card-text"></p>
+                                            <a href="#" class="btn btn-primary">Enroll</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 mb-4">
+                                    <div class="card">
+                                        <img src="#" class="card-img-top" alt="Course Image">
+                                        <div class="card-body">
+                                            <h5 class="card-title">C++</h5>
+                                            <p class="card-text"></p>
+                                            <a href="#" class="btn btn-primary">Enroll</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 mb-4">
+                                    <div class="card">
+                                        <img src="#" class="card-img-top" alt="Course Image">
+                                        <div class="card-body">
+                                            <h5 class="card-title">C#</h5>
+                                            <p class="card-text"></p>
+                                            <a href="#" class="btn btn-primary">Enroll</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 mb-4">
+                                    <div class="card">
+                                        <img src="#" class="card-img-top" alt="Course Image">
+                                        <div class="card-body">
+                                            <h5 class="card-title">C Programming Language</h5>
+                                            <p class="card-text"></p>
+                                            <a href="#" class="btn btn-primary">Enroll</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 mb-4">
+                                    <div class="card">
+                                        <img src="#" class="card-img-top" alt="Course Image">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Go-Lang</h5>
+                                            <p class="card-text"></p>
+                                            <a href="#" class="btn btn-primary">Enroll</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                            </div>
+                            
+                            
+                                
+
+
+
+                            
+                        </div>
+                    </div>
+                </main>
+                
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
